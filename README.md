@@ -1,2 +1,2 @@
 # Pay-Fall
-A full-stack e-commerce website built with Laravel, PHP, MySQL, JavaScript, HTML, and CSS featuring user authentication, product management, shopping cart, and online shopping functionality.
+PayFall is a full-stack e-commerce website built using HTML, CSS, JavaScript, Node.js, Express.js, and MySQL. The project provides a modern online shopping experience with user authentication, product management, shopping cart, and order management features.
