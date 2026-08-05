@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{
+      padding:0%;
+      margin: 0%;
+    }
+    header{
+      width: 99%;
+      height: 145px;
+      background-color: aqua;
+     
+    }
+    #logo-image{
+      float: left;
+      padding-bottom: 0px;
+    }
+    
+   #location{
+    float: left;
+    margin-top: 20px;
+    margin-left: 106px;
+   }
+   #nav-head{
+     margin-top: 20px;
+     margin-left: 200px;
+      float: left;
+    }
+   #input1{
+    margin-top: 22px;
+    margin-left: 250px;
+    width: 250px;
+  padding: 8px;
+   }
+  #trolly{
+    float: left;
+    margin-top: 35px;
+    margin-left: 20px;
+  }
+  @keyframes direct{
+     from {
+      transform: translateX();
+
+     }
+      to {transform: translateX(175px);}
+     }
+    #trolly{
+      animation: direct 4s;
+      animation-iteration-count: infinite;
+     animation-timing-function: ease-in-out;
+     animation-direction: alternate;
+    }
+   nav{
+    margin-top: 25px;
+    background-color: rgba(54, 219, 137, 0.548);
+  margin-left: 180px;
+ margin-right: 180px;
+  height: 60px;
+  text-align: center;
+ float: left;
+   }
+ .anchor{
+  display: inline-block;
+  margin-top: 0px;
+  text-decoration: none;
+  padding: 25px;
+  color:black;
+  font-weight: 600;
+  
+ }
+a:hover{
+  color: blue;
+}
+   #btn{
+    width: 80px;
+    height: 35px; 
+        margin-top: 40px;
+        background-color: rgb(32, 182, 77);
+        border-radius: 8px;
+   }
+   #btn:hover{
+    width: 84px;
+    height: 40px;
+    background-color: rgb(16, 13, 187);
+   }
+   main{
+     margin-top: 5px;
+      width: 100%;
+      background-color: blueviolet;
+    }
+    #main-section{
+      float: left;
+      width: 70%;
+      background-color: chocolate;
+    }
+    
+    
+    #students{
+      text-align: center;
+      margin: 18px;
+    background-color: rgb(53, 53, 201);
+    width: 96%;
+    height: 450px;
+    
+    }
+    .students-products{
+      width: 31.3%;
+      height: 89%;
+      background-color: black;
+      margin: 3px 3px 3px 12px;
+      float: left;
+    }
+   
+  #digital{
+   margin: 18px;
+    background-color: rgb(53, 53, 201);
+    width: 96%;
+    height: 450px;
+    text-align: center;
+  }
+#house-appliances{
+   margin: 18px;
+    background-color: rgb(53, 53, 201);
+    width: 96%;
+    height: 450px;
+    text-align: center;
+}
+#books{
+ margin: 18px;
+    background-color: rgb(53, 53, 201);
+    width: 96%;
+    height: 450px;
+    text-align: center;
+}
+.about-product{
+  width: 100%;
+  height: 46px;
+  background-color: orangered;
+  
+}
+ aside{
+  margin: 2px;
+  width: 29%;
+  height: 1889px;
+  float: left;
+  background-color: greenyellow;
+  
+}
+#vid1{
+  margin: 20px 20px 20px 28px;
+}
+#vid2{
+  margin: 20px 20px 20px 28px;
+}
+#asid1{
+  background: 
+  linear-gradient(rgba(32,32,45,0.5),rgba(130, 207, 120, 0.5)),url(images/amazon2.jfif);
+   
+   background-repeat: no-repeat;
+   background-size: cover;
+   width: 90%;
+   height: 350px;
+   margin-left: 17px;
+   margin-top: 10px;
+   margin-bottom: 5px;
+}
+#asid2{
+ background: 
+ linear-gradient(rgba(32,32,45,0.5),rgba(130, 207, 120, 0.5)),url(images/amazon.png);
+    background-repeat: no-repeat;
+   background-size: cover;
+    width: 90%;
+   height: 350px;
+   margin-left: 17px;
+}
+footer{
+  width: 99%;
+  text-align: center;
+  padding-top: 20px;
+  background-color: #232f3e;
+float: left;
+margin-top:5px;
+height: 350px;
+}
+footer p{
+  margin: 157px 20px 0px 20px;
+  
+}
+  </style>
+</head>
+<body>
+  <header>
+    <img src="images/ecommerce-logo.jfif" width="90px" height="80px" id="logo-image" alt="">
+    <div id="location">A-1 Standard <span style="font-weight: 200;">Pakistan <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="M536.5-503.5Q560-527 560-560t-23.5-56.5Q513-640 480-640t-56.5 23.5Q400-593 400-560t23.5 56.5Q447-480 480-480t56.5-23.5ZM480-186q122-112 181-203.5T720-552q0-109-69.5-178.5T480-800q-101 0-170.5 69.5T240-552q0 71 59 162.5T480-186Zm0 106Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Zm0-480Z"/></svg></span></div>
+    <h1 id="nav-head">Digital PayFall</h1>
+    <input type="text" placeholder="Search here..." id="input1"><br>
+    <svg  id="trolly"  xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#0000F5"><path d="M231.83-102.64Q210-124.62 210-155.47q0-30.86 21.98-52.7Q253.95-230 284.81-230t52.69 21.98q21.83 21.97 21.83 52.83t-21.97 52.69q-21.98 21.83-52.83 21.83-30.86 0-52.7-21.97Zm400 0Q610-124.62 610-155.47q0-30.86 21.98-52.7Q653.95-230 684.81-230t52.69 21.98q21.83 21.97 21.83 52.83t-21.97 52.69q-21.98 21.83-52.83 21.83-30.86 0-52.7-21.97ZM238.67-734 344-515.33h285.33l120-218.67H238.67ZM206-800.67h589.38q22.98 0 34.97 20.84 11.98 20.83.32 41.83L693.33-490.67q-11 19.34-28.87 30.67-17.87 11.33-39.13 11.33H324l-52 96h487.33V-286H278q-43 0-63-31.83-20-31.84-.33-68.17l60.66-111.33-149.33-316H47.33V-880h121.34L206-800.67Zm138 285.34h285.33H344Z"/></svg> <!--Shopping Card -->
+    
+    <nav>
+      
+        <a href="" class="anchor">Home</a>
+        <a href="" class="anchor">Images</a>
+        <a href="" class="anchor">Videos</a>
+        <a href="" class="anchor">Products</a>
+        <a href="" class="anchor">About </a>
+        <a href="" class="anchor">Contact</a>
+      
+    </nav>
+     <button id="btn">Sign In</button>
+  </header>
+  <main>
+    
+     <section id="main-section">
+      <section id="students">
+    
+ 
+ <h1 >Student's Style is Here</h1> 
+    
+     <div id="jeometry" class="students-products">
+      <img src="images/jeometry1.jfif" alt="" width="100%" height="350px">
+    <div class="about-product">Jeometry Box</div>
+  </div>
+  <div id="school-bag" class="students-products">
+    <img src="images/school-bag1.jfif" alt="" width="100%" height="350px">
+     <div class="about-product">Luxery School bags</div>
+  </div>
+  <div id="bottles" class="students-products">
+    <img src="images/water-bottle1.jfif" alt="" width="100%" height="350px">
+    <div class="about-product">Cool Water Bottles</div>
+  </div>
+    </section>
+     
+    <section id="digital">
+      <h1>Now Become digital</h1>
+  <div id="laptop" class="students-products">
+    <img src="images/laptop1.jfif" alt="" width="100%" height="350px">
+    <div class="about-product">Vibes Laptops</div>
+  </div>
+  <div id="head-phones" class="students-products">
+    <img src="images/headphone1.jfif" alt="" width="100%" height="350px">
+     <div class="about-product">Decent HeadPhones</div>
+  </div>
+  <div id="earbuds" class="students-products">
+    <img src="images/earbuds1.jfif" alt="" width="100%" height="350px">
+     <div class="about-product">Crusial Earbuds</div>
+  </div>
+    </section>
+    
+    <section id="house-appliances">
+      <h1>Every Type of House Appliances</h1>
+        
+  <div id="kitchen-equipments" class="students-products">
+    <img src="images/kitchen-equipment.jfif" alt="" width="100%" height="350px">
+     <div class="about-product">All in one Kitchen</div>
+  </div>
+  <div id="irons" class="students-products">
+    <img src="images/iron1.jfif" alt="" width="100%" height="350px">
+    <div class="about-product">Cloths are pressing</div>
+  </div>
+  <div id="oven" class="students-products">
+    <img src="images/oven1.jfif" alt="" width="100%" height="350px">
+    <div class="about-product">Here Everything is hot</div>
+  </div>
+    </section>
+    <section id="books">
+      <h1 >Books are Changing lives</h1>
+        
+  <div id="normal-books" class="students-products">
+    <img src="images/book1.jfif" alt="" width="100%" height="350px">
+     <div class="about-product">Treasure-Trove of Knowledge</div>
+  </div>
+  <div id="story-books" class="students-products">
+    <img src="images/book5.jfif" alt="" width="100%" height="350px">
+     <div class="about-product">Moral lesson with Stories</div>
+  </div>
+  <div id="Diary" class="students-products">
+    <img src="images/diary1.jfif" alt="" width="100%" height="350px">
+    <div class="about-product">Remembers and secrets of Life</div>
+  </div>
+    </section>
+    </section>
+   <aside>
+      <section>
+        <div id="vid1"><video src="videos/WhatsApp Video 2026-08-02 at 2.12.50 AM.mp4" width="95%" height="420px" controls autoplay muted loop></video></div>
+        <div id="vid2"><video src="videos/WhatsApp Video 2026-08-02 at 2.15.05 AM.mp4" width="95%" height="420px" controls autoplay muted loop></video></div>
+        <div id="asid1"> </div>
+        <div id="asid2"></div>
+       
+      </section>
+    </aside>
+  </main>
+  <footer>
+    <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet accusantium velit pariatur libero, quasi explicabo id eius dignissimos corporis error delectus. Est voluptatum dolores dolor? Excepturi facere sint incidunt ipsa in quis corrupti, tempore iste ab rerum voluptates qui? Ducimus aperiam natus consequuntur iste laudantium a at magni, expedita asperiores.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet accusantium velit pariatur libero, quasi explicabo id eius dignissimos corporis error delectus. Est voluptatum dolores dolor? 
+    </p>
+  </footer>
+</body>
+</html>
