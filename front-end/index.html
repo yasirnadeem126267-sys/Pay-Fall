@@ -4,6 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    >
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    
   <style>
     *{
       padding:0%;
@@ -177,19 +185,146 @@ a:hover{
    height: 350px;
    margin-left: 17px;
 }
-footer{
-  width: 99%;
-  text-align: center;
-  padding-top: 20px;
-  background-color: #232f3e;
-float: left;
-margin-top:5px;
-height: 350px;
+.main-footer {
+    background: #111827;
+    color: #ffffff;
+    padding: 75px 0 0;
 }
-footer p{
-  margin: 157px 20px 0px 20px;
-  
+.footer-main {
+    padding-bottom: 55px;
 }
+.footer-logo {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 29px;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+.footer-logo i {
+    color:white;
+}
+.footer-logo span {
+    color: white;
+}
+.footer-description {
+    color: #9ca3af;
+    font-size: 14px;
+    line-height: 1.9;
+    max-width: 310px;
+    margin-bottom: 24px;
+}
+.footer-socials {
+    display: flex;
+    gap: 11px;
+}
+.footer-socials a {
+    width: 39px;
+    height: 39px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #253044;
+    color: #ffffff;
+    border-radius: 9px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: 0.3s ease;
+}
+.footer-socials a:hover {
+    transform: translateY(-4px);
+}
+.footer-heading {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 23px;
+    color: #ffffff;
+}
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.footer-links li {
+    margin-bottom: 13px;
+    color: #9ca3af;
+    font-size: 13px;
+}
+.footer-links a {
+    color: #9ca3af;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+.footer-links a:hover {
+    color: #f59e0b;
+    padding-left: 4px;
+}
+.footer-contact li {
+    display: flex;
+    align-items: flex-start;
+    gap: 9px;
+    line-height: 1.6;
+}
+.footer-contact i {   
+    font-size: 15px;
+    margin-top: 2px;
+}
+.footer-bottom {
+    border-top: 1px solid #293548;
+    padding: 23px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.footer-bottom p {
+    color: #9ca3af;
+    font-size: 13px;
+    margin: 0;
+}
+.footer-bottom-links {
+    display: flex;
+    gap: 22px;
+    flex-wrap: wrap;
+}
+.footer-bottom-links a {
+    color: #9ca3af;
+    text-decoration: none;
+    font-size: 12px;
+    transition: 0.3s ease;
+}
+.footer-bottom-links a:hover {
+    color: #f59e0b;
+}
+@media (max-width: 767px) {
+    .main-footer {
+        padding-top: 50px;
+    }
+    .footer-main {
+        padding-bottom: 35px;
+    }
+    .footer-heading {
+        margin-bottom: 17px;
+        font-size: 15px;
+    }
+    .footer-bottom {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .footer-bottom-links {
+        gap: 13px;
+    }
+}
+@media (max-width: 400px) {
+    .footer-bottom-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
   </style>
 </head>
 <body>
@@ -293,11 +428,96 @@ footer p{
       </section>
     </aside>
   </main>
-  <footer>
-    <p>
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet accusantium velit pariatur libero, quasi explicabo id eius dignissimos corporis error delectus. Est voluptatum dolores dolor? Excepturi facere sint incidunt ipsa in quis corrupti, tempore iste ab rerum voluptates qui? Ducimus aperiam natus consequuntur iste laudantium a at magni, expedita asperiores.
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet accusantium velit pariatur libero, quasi explicabo id eius dignissimos corporis error delectus. Est voluptatum dolores dolor? 
-    </p>
-  </footer>
+  <footer class="main-footer">
+    <div class="container">
+        <div class="row g-4 footer-main">
+            <div class="col-lg-4 col-md-6">
+                <a href="#" class="footer-logo">
+                    <i class="bi bi-bag-check-fill"></i>
+                    MyShop<span>.</span>
+                </a>
+                <p class="footer-description">
+                    Your trusted online marketplace for quality products,
+                    reliable sellers, and a better shopping experience.
+                </p>
+                <div class="footer-socials">
+                    <a href="#" aria-label="Facebook">
+                        <i class="bi bi-facebook"></i>
+                    </a>
+                    <a href="#" aria-label="Instagram">
+                        <i class="bi bi-instagram"></i>
+                    </a>
+                    <a href="#" aria-label="Twitter">
+                        <i class="bi bi-twitter-x"></i>
+                    </a>
+                    <a href="#" aria-label="YouTube">
+                        <i class="bi bi-youtube"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-6 col-6">
+                <h5 class="footer-heading">Quick Links</h5>
+                <ul class="footer-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">All Products</a></li>
+                    <li><a href="#">Categories</a></li>
+                    <li><a href="#">Flash Deals</a></li>
+                    <li><a href="#">Professional Shops</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-2 col-md-6 col-6">
+                <h5 class="footer-heading">Customer Service</h5>
+                <ul class="footer-links">
+                    <li><a href="#">My Account</a></li>
+                    <li><a href="#">My Orders</a></li>
+                    <li><a href="#">Track Order</a></li>
+                    <li><a href="#">Return Policy</a></li>
+                    <li><a href="#">Help Center</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-2 col-md-6 col-6">
+                <h5 class="footer-heading">For Sellers</h5>
+                <ul class="footer-links">
+                    <li><a href="#">Become a Seller</a></li>
+                    <li><a href="#">Open a Shop</a></li>
+                    <li><a href="#">Seller Dashboard</a></li>
+                    <li><a href="#">Seller Guidelines</a></li>
+                    <li><a href="#">Contact Support</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-2 col-md-6 col-6">
+                <h5 class="footer-heading">Contact Us</h5>
+                <ul class="footer-links footer-contact">
+                    <li>
+                        <i class="bi bi-envelope"></i>
+                        <a href="">
+                            Email Support
+                        </a>
+                    </li>
+                    <li>
+                        <i class="bi bi-telephone"></i>
+                        <a href="">
+                            Call Support
+                        </a>
+                    </li>
+                    <li>
+                        <i class="bi bi-clock"></i>
+                        <span>24/7 Support</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>
+                © 2026 plazaGrid. All rights reserved.
+            </p>
+            <div class="footer-bottom-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms & Conditions</a>
+                <a href="#">Cookie Policy</a>
+            </div>
+        </div>
+    </div>
+</footer>
 </body>
 </html>
